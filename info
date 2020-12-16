@@ -1,0 +1,2 @@
+// remove --rm container on stop example
+docker run -p 8080:80 -d --rm <image>
