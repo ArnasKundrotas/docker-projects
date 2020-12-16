@@ -1,1 +1,3 @@
 docker run -it <image>
+
+docker start -a -i <image>
