@@ -1,8 +1,8 @@
-FROM fs
+FROM node:14
 
 WORKDIR /app
 
-COPY pachage.json /app
+COPY package.json /app
 
 RUN npm install
 
