@@ -8,3 +8,6 @@ docker run -d --rm 3000:3000 --name <name> \
     -v /app/temp \ <-- anonymous volume set to edit /app <-- temp folder NOT ro (Read Only) <-- Stored in the docker fs
     -v <name>:/app/<folder name> <-- named volume stored in the docker fs
     <container name>:volumes <-- caontainer name nad tag -> "volumes" etc......
+
+// docker ignore
+.dockerignore
