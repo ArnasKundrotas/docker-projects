@@ -1,2 +1,10 @@
 // remove --rm container on stop example
 docker run -p 8080:80 -d --rm <image>
+
+// VOLUMES
+docker run -d --rm 3000:3000 --name <name> \
+    -v <local absolute path>://app:ro \ <-- bind mount <- ro - read only <-- Stored in the local machine
+    -v /app/node_modules \  <-- anonymous volume set to edit /app <-- node_modules fodler NOT ro (Read Only) <-- Stored in the docker fs
+    -v /app/temp \ <-- anonymous volume set to edit /app <-- temp folder NOT ro (Read Only) <-- Stored in the docker fs
+    -v <name>:/app/<folder name> <-- named volume stored in the docker fs
+    <container name>:volumes <-- caontainer name nad tag -> "volumes"
